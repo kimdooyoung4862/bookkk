@@ -1,226 +1,30 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
-html {
-	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
 body {
-	color: black;
-	font-size: 15px;
 	margin: 0 auto;
 }
-
-article, aside, details, figcaption, figure, footer, header, hgroup,
-	main, nav, section, summary {
-	display: block;
-}
-
-audio, canvas, progress, video {
-	display: inline-block;
-	vertical-align: baseline;
-}
-
-audio:not ([controls] ) {
-	display: none;
-	height: 0;
-}
-
-[hidden], template {
-	display: none;
-}
-
 a {
 	background: transparent;
 }
-
-a:active, a:hover {
-	outline: 0;
-}
-
-abbr[title] {
-	border-bottom: 1px dotted;
-}
-
-b, strong {
-	font-weight: bold;
-}
-
-dfn {
-	font-style: italic;
-}
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-mark {
-	background: #ff0;
-	color: #000;
-}
-
-small {
-	font-size: 80%;
-}
-
-sub, sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	top: -0.5em;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
 img {
 	border: 0;
 	cursor: pointer;
 }
-
-svg:not (:root ) {
-	overflow: hidden;
-}
-
-figure {
-	margin: 1em 40px;
-}
-
-hr {
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	height: 0;
-}
-
-pre {
-	overflow: auto;
-}
-
-code, kbd, pre, samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
-button, input, optgroup, select, textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-}
-
-button {
-	overflow: visible;
-}
-
-button, select {
-	text-transform: none;
-}
-
-button, html input[type="button"], input[type="reset"], input[type="submit"]
-	{
-	-webkit-appearance: button;
-	cursor: pointer;
-}
-
-button[disabled], html input[disabled] {
-	cursor: default;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-input {
-	line-height: normal;
-}
-
-input[type="checkbox"], input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
-	{
-	height: auto;
-}
-
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
-	{
-	-webkit-appearance: none;
-}
-
-fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-	border: 0;
-	padding: 0;
-}
-
-textarea {
-	overflow: auto;
-}
-
-optgroup {
-	font-weight: bold;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-td, th {
-	padding: 0;
-}
-
 a {
-	color: #303030;
+	color: black;
 	text-decoration: none;
 	cursor: pointer;
 }
-
 ul, ol, li {
 	list-style: none;
 }
-
-ol {
-	margin: 0;
-	padding: 0;
-}
-
-input:focus, select:focus, textarea:focus {
-	outline: none;
-}
-
 .category-bar {
 	height: 42px;
 	background: black;
 }
-
 .container {
 	width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
-
 .store-gnb ul {
 	margin: 0;
 	padding: 0;
@@ -228,38 +32,31 @@ input:focus, select:focus, textarea:focus {
 	color: white;
 	font-size: 15px;
 }
-
 .store-gnb>ul>li {
 	float: left;
 	display: block;
 	height: 42px;
 }
-
 .store-gnb>ul>li>a {
 	display: inline-block;
 	color: white;
 	padding: 12px 20px;
 }
-
 .store-gnb>ul>li:hover {
 	background-color: #808080;
 }
-
 .store-gnb>ul>li.all-menu>a {
 	padding: 13px 14px 17px 15px;
 	height: 12px;
 	line-height: 17px;
 	background: black;
 }
-
 .store-gnb>ul>li.all-menu:hover .store-lnb {
 	display: block;
 }
-
 .store-gnb>ul>li>a>.caret {
 	margin-left: 80px;
 }
-
 .store-gnb>ul>li>a>.genre-list {
 	position: relative;
 	display: inline-block;
@@ -269,7 +66,6 @@ input:focus, select:focus, textarea:focus {
 	top: 2px;
 	margin-right: 9px;
 }
-
 .caret {
 	display: inline-block;
 	width: 0;
@@ -280,7 +76,6 @@ input:focus, select:focus, textarea:focus {
 	border-right: 4px solid transparent;
 	border-left: 4px solid transparent;
 }
-
 .store-lnb {
 	display: none;
 	position: absolute;
@@ -289,51 +84,42 @@ input:focus, select:focus, textarea:focus {
 	z-index: 10;
 	border: 2px solid black;
 	height: 432px;
-	background-color: #fff;
+	background-color: white;
 }
-
 .store-lnb>ul {
 	position: relative;
 	width: 180px;
 	padding-right: 180px;
 }
-
 .store-lnb>ul>li {
 	text-align: left;
 }
-
 .store-lnb>ul>li a {
 	display: block;
 	padding: 9px 20px;
 }
-
 .store-lnb>ul>li a:hover {
 	box-shadow: 400px 0 0 0 rgb(128, 128, 128) inset;
 	cursor: pointer;
 }
-
 .store-lnb>ul>li>a {
 	font-weight: bold;
 	font-size: 14px;
 }
-
 .store-lnb>ul>li.active>a {
 	text-decoration: none;
 	background: white;
 	color: black;
 }
-
 .store-lnb>ul>li .caret {
 	display: none;
 	position: absolute;
 	top: 16px;
 	right: 10px;
 }
-
 .store-lnb>ul>li.active .caret {
 	display: block;
 }
-
 .store-lnb>ul>li>ul {
 	position: absolute;
 	width: 180px;
@@ -343,93 +129,41 @@ input:focus, select:focus, textarea:focus {
 	background: #f8f8f8;
 	border-left: 1px solid black;
 }
-
 .store-lnb>ul>li.active>ul {
 	z-index: 2;
 	overflow-y: auto;
 	display: block;
 }
-
 .store-lnb>ul>li>ul>li>a {
 	font-size: 13px;
 }
-
 .img-advertise .main-advertise {
 	overflow: hidden;
 	max-height: 545px;
 	border-bottom: 1px solid white;
 	position: relative;
 }
-
-#img-advertise .bx-wrapper {
-	border: none;
-	margin: 0;
-	box-shadow: none;
-}
-
-#img-advertise .wrap-img-advertise {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-#img-advertise .img-advertise-img {
-	position: absolute;
-	top: 0;
-	height: 500px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center 50%;
-}
-
-#img-advertise .img-advertise-img img {
-	display: block;
-	max-width: 100%;
-	margin: 0 auto;
-}
-
-#img-advertise .img-advertise-img a {
-	display: block;
-	height: 500px;
-}
-
 #img-advertise #main-img-btn-clearfix {
-	padding: 0;
-	margin: 0;
-	position: relative;
-	overflow: hidden;
-	bottom: 0;
-	max-width: 1000px;
+	
+	max-width : 1000px;
 	height: 45px;
 	margin: 0 auto;
-	border-left: 1px solid #f5f5f5;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
+	border-left: 1px solid white;
 }
-
+/* 봄 여름 가을 겨울 버튼 */
 #img-advertise #main-img-btn-clearfix li {
 	float: left;
-	background: #f5f5f5;
 	width: 25%;
 	height: 45px;
 	margin: 0;
-	background: #fff;
-	border-right: 1px solid #f5f5f5;
+	background: black;
+	border-right: 1px solid white;
 	border-radius: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+/* 봄 여름 가을 겨울 버튼 */
 #img-advertise #main-img-btn-clearfix button {
+	color : white;
 	display: block;
 	position: relative;
 	width: 100%;
@@ -438,89 +172,26 @@ input:focus, select:focus, textarea:focus {
 	padding: 0 35px;
 	text-align: center;
 	text-indent: 0;
-	font-size: 13px;
-	color: #666;
+	font-size: 15px;
 	outline: 0;
 	font-weight: bold;
-}
-
+} 
 #img-advertise #main-img-btn-clearfix button:hover {
-	color: black;
-	border-bottom: 2px solid black;
+	color: #808080;
+	border-bottom: 2px solid white;
+	border-top:  2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
 }
-
-#mask {
-	position: absolute;
-	z-index: 9000;
-	background-color: #000;
-	display: none;
-	left: 0;
-	top: 0;
-}
-
-#layerPopupMask {
-	position: absolute;
-	z-index: 9000;
-	background-color: #000;
-	display: none;
-	left: 0;
-	top: 0;
-}
-
-.book-item .book-author:hover {
-	color: #b75836;
-}
-
-.category .main .page-header .location a:hover {
-	color: #b75836;
-}
-
+/* 메인페이지 더보기 */
 .widget-header .more:hover {
-	color: #b75836;
+	color: #0080ff;
 }
-
-.hide {
-	display: none;
-}
-
-.hide-text {
-	display: block;
-	text-indent: -9999px;
-}
-
-.hidden {
-	float: left !important;
-	width: 0px !important;
-	height: 0px !important;
-	opacity: 0 !important;
-}
-
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0
-}
-
-.color-primary {
-	color: #b75836;
-}
-
-.half {
-	margin: 0 !important;
-	padding: 0 !important;
-	width: 50% !important;
-}
-
+/* 부크크 차트  */
 .pull-left {
 	float: left;
 	margin-right: 4px;
 }
-
 .pull-right {
 	float: right;
 	margin-right: 4px;

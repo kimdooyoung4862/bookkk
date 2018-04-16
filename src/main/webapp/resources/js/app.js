@@ -14,45 +14,11 @@ app = (()=>{
 app.main=(()=>{
 	var $wrapper,context,view,image;
 	var onCreate=()=>{
-		 $wrapper = $('#wrapper');
 		 $content = $('#content');
 		 context = $.context();
 		 image = $.image();
 	     view = $.javascript()+'/view.js';
-	     setContentView();
 	     content();
-	 };
-	 var setContentView=()=>{
-		 $.getScript(view,()=>{
-    		 $(createDiv({
-    			 id : 'wrap-tnb-menu',
-    			 clazz : 'wrap-tnb-menu'
-    		 })).appendTo($wrapper);
-    		 $(createDiv({
-    			 id : 'tnb-menu-text-right',
-    			 clazz : 'tnb-menu text-right'
-    		 })).appendTo('#wrap-tnb-menu');
-    		 $(createATag({
-    			 id : 'a-login',
-    			 clazz : 'tnb-link',
-    			 val : '로그인'
-    		 })).appendTo('#tnb-menu-text-right')
-    		 .click(()=>{
- 				alert('로그인 클릭!');
- 			 });
-    		 $(createSpan({
-    			 id : 'span-login',
-    			 clazz : 'division'
-    		 })).appendTo('#tnb-menu-text-right');
-    		 $(createATag({
-    			 id : 'a-join',
-    			 clazz : 'tnb-link last',
-    			 val : '회원가입'
-    		 })).appendTo('#tnb-menu-text-right')
-    		 .click(()=>{
- 				alert('회원가입 클릭!');
- 			 });
-         });
 	 };
 	 var content=()=>{
 		 $.getScript(view,()=>{ 
@@ -650,7 +616,7 @@ app.main=(()=>{
 			 })).appendTo('#main-img-advertise');
 			 $(createImg({
 				 alt : '',
-				 src : 'http://kinimage.naver.net/20170816_266/1502847836577fOR57_JPEG/1502847836389.jpg'
+				 src : 'http://post.phinf.naver.net/20150410_81/sisblissn_14286294273733dqkc_JPEG/mug_obj_142862943077323432.jpg'
 			 })).appendTo('#main-img-advertise-1').attr('style','height: 450px; width:100%;')
 			 .click(()=>{
 				 alert('봄 클릭');
@@ -686,8 +652,8 @@ app.main=(()=>{
 				 })).appendTo('#main-img-advertise');
 				 $(createImg({
 					 alt : '',
-					 src : 'http://kinimage.naver.net/20170816_266/1502847836577fOR57_JPEG/1502847836389.jpg'
-				 })).appendTo('#a-img-1').attr('style','height: 450px; width:1360px;')
+					 src : 'http://post.phinf.naver.net/20150410_81/sisblissn_14286294273733dqkc_JPEG/mug_obj_142862943077323432.jpg'
+				 })).appendTo('#a-img-1').attr('style','height: 450px; width:100%;')
 				 .click(()=>{
 					 alert('봄 클릭');
 				 });
@@ -720,7 +686,7 @@ app.main=(()=>{
 				 $(createImg({
 					 alt : '',
 					 src : 'http://cafefiles.naver.net/20120815_51/wltn3743_1344961625040n8zgh_JPEG/32.jpeg'
-				 })).appendTo('#a-img-2').attr('style','height: 450px; width:1360px;')
+				 })).appendTo('#a-img-2').attr('style','height: 450px; width:100%;')
 				 .click(()=>{
 					 alert('여름 클릭');
 				 });
@@ -753,7 +719,7 @@ app.main=(()=>{
 				 $(createImg({
 					 alt : '',
 					 src : 'http://cafefiles.naver.net/20141024_221/duran011_1414101447080RxsoJ_JPEG/PicSpeed%2B-2071079421.jpg'
-				 })).appendTo('#a-img-3').attr('style','height: 450px; width:1360px;')
+				 })).appendTo('#a-img-3').attr('style','height: 450px; width:100%;')
 				 .click(()=>{
 					 alert('가을 클릭');
 				 });
@@ -787,7 +753,7 @@ app.main=(()=>{
 				 $(createImg({
 					 alt : '',
 					 src : 'http://post.phinf.naver.net/MjAxNjEyMjhfMjUz/MDAxNDgyODkzMTQ5NTg3.huKPPgR7H7zTAqQGfv5cKJ_lfzHWBu6K-CDBVYGgE94g.GrchDz4KjXlABiHi_HUFDBYanYGJLXobf_iHr75HgZAg.JPEG/Iaj1bpuo8oXHpdZizTkVN7g_HF7E.jpg'
-				 })).appendTo('#a-img-4').attr('style','height: 450px; width:1360px;')
+				 })).appendTo('#a-img-4').attr('style','height: 450px; width:100%;')
 				 .click(()=>{
 					 alert('겨울 클릭');
 				 });
@@ -803,7 +769,7 @@ app.main=(()=>{
 			 })).appendTo('#div-container-2');
 			 $(createDiv({
 				 id : 'div-ad-item-1',
-				 clazz : 'ad-item ad-1'
+				 clazz : 'ad-item'
 			 })).appendTo('#div-section-ad');
 			 $(createATag({
 				 id : 'a-ad-item-1',
@@ -864,7 +830,7 @@ app.main=(()=>{
 				 clazz : 'widget-header'
 			 })).appendTo('#div-left-ranking');
 			 $(createHTag({
-				 num : '3',
+				 size : '3',
 				 clazz : 'widget-title',
 				 val : '이주의 책'
 			 })).appendTo('#div-left-ranking-header');
@@ -874,8 +840,7 @@ app.main=(()=>{
 			 })).appendTo('#div-left-ranking');
 			 $(createUL({
 				 id : 'ul-left-ranking', 
-				 clazz : 'nav nav-tabs-vertical',
-				 role : 'tablist'
+				 clazz : 'nav nav-tabs-vertical'
 			 })).appendTo('#div-left-ranking-content');
 			 $(createLI({
 				 id : 'li-left-ranking-1',
@@ -922,7 +887,7 @@ app.main=(()=>{
 				 clazz : 'widget-header'
 			 })).appendTo('#div-right-ranking');
 			 $(createHTag({
-				 num : '3',
+				 size : '3',
 				 clazz : 'widget-title',
 				 val : '부크크 차트'
 			 })).appendTo('#div-right-ranking-header');
@@ -971,6 +936,8 @@ app.main=(()=>{
 			 .click(()=>{
 				 alert('신간 클릭');
 			 });
+			 
+			 
 			 $(createDiv({
 				 id : 'div-section-category',
 				 clazz : 'section-category'
@@ -984,15 +951,14 @@ app.main=(()=>{
 				 clazz : 'widget-header'
 			 })).appendTo('#div-widget-ranking-1');
 			 $(createHTag({
-				 num : '3',
+				 size : '3',
 				 clazz : 'widget-title',
 				 val : '시·에세이'
 			 })).appendTo('#div-widget-header-1');
 			 $(createATag({
 				 id : '',
-				 clazz : 'more',
 				 val : '더보기'
-			 })).appendTo('#div-widget-header-1');
+			 })).appendTo('#div-widget-header-1').attr('class','more');
 			 $(createDiv({
 				 id : 'div-category-list',
 				 clazz : 'widget-content book-list clearfix'
@@ -1016,8 +982,13 @@ app.main=(()=>{
 				 clazz : 'book-deco'
 			 })).appendTo('#div-book-cover-1');
 			 $(createDiv({
+				 id : 'book-title',
 				 clazz : 'book-title'
 			 })).appendTo('#a-book-item-1');
+			 $(createHTag({
+				 size : '10',
+				 val : '두영'
+			 })).appendTo('#book-title').attr('style','max-height : 3px;');
 			 $(createDiv({
 				 id : 'div-book-meta-1',
 				 clazz : 'book-meta'
